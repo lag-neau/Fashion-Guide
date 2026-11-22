@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>오쌤 분위기 시안</title>
+<style>
+@font-face{font-family:P;src:url(pretendard-variable.woff2) format("woff2");font-weight:100 900}
+:root{--bg:#F6F1E9;--card:#FFFCF7;--ink:#2B2723;--sub:#7A7168;--line:#E5DCCF;--accent:#B5573A;--accent-soft:#F3E1D8;--good:#4F7A5A;--good-soft:#E1EDE3;--radius:6px;--title:"P"}
+body.b{--bg:#F4F6F9;--card:#FFFFFF;--ink:#16202E;--sub:#66717F;--line:#E3E8EE;--accent:#2F5BD3;--accent-soft:#E6EDFC;--good:#1F8A63;--good-soft:#DFF3EA;--radius:16px}
+body.c{--bg:#17181A;--card:#212225;--ink:#ECE8E1;--sub:#9C978E;--line:#33343A;--accent:#D4B47C;--accent-soft:#3A3326;--good:#8FC1A2;--good-soft:#26332B;--radius:10px}
+*{box-sizing:border-box;margin:0}
+body{font-family:P,sans-serif;background:var(--bg);color:var(--ink);letter-spacing:-0.01em;line-height:1.5;padding:20px 16px 32px}
+.wrap{max-width:1080px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.logo{font-weight:800;font-size:22px;letter-spacing:-0.03em}
+.logo i{font-style:normal;color:var(--accent)}
+.step{font-size:13px;color:var(--sub)}
+.grid{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+body.b .card{border:none;box-shadow:0 1px 3px rgba(20,30,50,.06)}
+.label{font-size:12px;color:var(--sub);font-weight:600;margin-bottom:6px}
+h1{font-size:21px;font-weight:750;letter-spacing:-0.025em;margin-bottom:4px}
+body.a h1{font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+.rule{font-size:14.5px;margin-top:10px}
+.level{display:flex;gap:4px;margin-top:12px;align-items:center;font-size:12px;color:var(--sub)}
+.level span{width:22px;height:6px;border-radius:3px;background:var(--line)}
+.level span.on{background:var(--accent)}
+.item-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.item-name{font-size:17px;font-weight:700}
+.tag{font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.tag.spend{background:var(--accent-soft);color:var(--accent)}
+.tag.save{background:var(--good-soft);color:var(--good)}
+dl{display:grid;grid-template-columns:44px 1fr;gap:6px 10px;margin-top:10px;font-size:14px}
+dt{color:var(--sub);font-size:13px}
+.why{margin-top:10px;font-size:13.5px;color:var(--sub);border-left:2px solid var(--accent);padding-left:10px}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px}
+.tier{border:1px solid var(--line);border-radius:calc(var(--radius) - 2px);padding:8px;text-align:center}
+.tier b{display:block;font-size:12px;color:var(--sub);font-weight:600}
+.tier em{font-style:normal;font-size:14px;font-weight:700}
+.tier.pick{border-color:var(--accent);background:var(--accent-soft)}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--card);font-weight:700;padding:14px;border-radius:var(--radius);font-size:15px;margin-top:4px}
+body.c .btn{color:#17181A}
+.name-tag{font-size:12px;color:var(--sub);margin-top:24px;text-align:center}
+@media(min-width:900px){
+ body{padding:36px 40px}
+ .grid{grid-template-columns:340px 1fr 1fr;align-items:start}
+ .side{grid-row:span 3;position:sticky;top:20px;display:grid;gap:14px}
+}
+</style></head>
+<body>
+<div class="wrap">
+<header><div class="logo">오<i>쌤</i></div><div class="step">3 / 5 · 추천 보기</div></header>
+<div class="grid">
+ <div class="side">
+  <div class="card">
+   <div class="label">오늘의 기준</div>
+   <h1>소개팅, 깔끔하게</h1>
+   <div class="chips"><span class="chip">겨울</span><span class="chip">실내 카페</span><span class="chip">처음 보는 사람</span></div>
+   <p class="rule">첫인상은 깔끔함이 전부예요. 색은 세 가지 안으로, 몸에 맞는 핏으로 입어요.</p>
+   <div class="level">격식 <span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span> 3 / 5</div>
+  </div>
+  <a class="btn">사는 방법 보기</a>
+ </div>
+ <div class="card">
+  <div class="item-head"><div class="item-name">옥스퍼드 셔츠</div><span class="tag spend">돈 쓸 곳</span></div>
+  <dl><dt>색</dt><dd>흰색, 연한 하늘색</dd><dt>핏</dt><dd>어깨선이 어깨 끝에 오는 기본 핏</dd><dt>소재</dt><dd>면 옥스퍼드 (두께감, 구김 적음)</dd></dl>
+  <p class="why">얼굴 가까이 오는 옷이라 첫인상을 가장 크게 좌우해요.</p>
+  <div class="price"><div class="tier"><b>가성비</b><em>2~4만</em></div><div class="tier pick"><b>기본</b><em>5~9만</em></div><div class="tier"><b>오래 입는</b><em>10만+</em></div></div>
+ </div>
+ <div class="card">
+  <div class="item-head"><div class="item-name">울 슬랙스</div><span class="tag spend">돈 쓸 곳</span></div>
+  <dl><dt>색</dt><dd>차콜, 진회색</dd><dt>핏</dt><dd>밑단이 신발에 살짝 닿는 일자</dd><dt>소재</dt><dd>울 혼방 (겨울에 따뜻하고 단정)</dd></dl>
+  <p class="why">셔츠의 밝은 색을 차분하게 잡아 줘요.</p>
+  <div class="price"><div class="tier"><b>가성비</b><em>3~5만</em></div><div class="tier pick"><b>기본</b><em>6~10만</em></div><div class="tier"><b>오래 입는</b><em>15만+</em></div></div>
+ </div>
+ <div class="card">
+  <div class="item-head"><div class="item-name">니트 조끼</div><span class="tag save">아낄 곳</span></div>
+  <dl><dt>색</dt><dd>네이비, 베이지</dd><dt>핏</dt><dd>허리선에 끝나는 길이</dd><dt>소재</dt><dd>울 또는 아크릴 혼방</dd></dl>
+  <p class="why">입어도 빼도 되는 옷이라 처음엔 싸게 시도해 봐요.</p>
+  <div class="price"><div class="tier pick"><b>가성비</b><em>2~3만</em></div><div class="tier"><b>기본</b><em>4~7만</em></div><div class="tier"><b>오래 입는</b><em>10만+</em></div></div>
+ </div>
+ <div class="card">
+  <div class="item-head"><div class="item-name">흰 가죽 스니커즈</div><span class="tag spend">돈 쓸 곳</span></div>
+  <dl><dt>색</dt><dd>흰색 (밑창까지)</dd><dt>핏</dt><dd>앞코가 둥글고 얇은 모양</dd><dt>소재</dt><dd>천연 또는 인조 가죽</dd></dl>
+  <p class="why">거의 모든 옷과 어울려서, 한 켤레로 오래 신어요.</p>
+  <div class="price"><div class="tier"><b>가성비</b><em>4~6만</em></div><div class="tier pick"><b>기본</b><em>8~15만</em></div><div class="tier"><b>오래 입는</b><em>20만+</em></div></div>
+ </div>
+</div>
+<p class="name-tag" id="nt"></p>
+</div>
+<script>const t=new URLSearchParams(location.search).get('t')||'a';document.body.className=t;document.getElementById('nt').textContent={a:'시안 A · 따뜻한 종이',b:'시안 B · 산뜻한 앱',c:'시안 C · 차분한 갤러리'}[t]+' · 가격은 예시';</script>
+</body></html>
